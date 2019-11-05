@@ -62,12 +62,12 @@
   min-width: 50px;
 }
 
-.insurance-table__link a {
+/* .insurance-table__link a {
   text-decoration: underline;
   color: #22D16C;
-}
+} */
 
-@media screen and (min-width: 980px) {
+/* @media screen and (min-width: 980px) { */
   .insurance-table__link a {
     text-decoration: none;
     color: #000000;
@@ -77,4 +77,4 @@
     text-decoration: underline;
     color: #22D16C;
   }
-}
+/* } */
