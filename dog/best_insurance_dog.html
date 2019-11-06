@@ -293,18 +293,36 @@
                               </table>
 
                               <script>
-                                ;(function(){
-                                  document.querySelector('.insurance-table').addEventListener('click', function(event) {                       
-                                    if (event.target.tagName != 'A') return;
-                                    ga('send', 'event', {
-                                      eventCategory: 'Dog insurance company Link',
-                                      eventAction: 'Click',
-                                      eventLabel: event.target.href,
-				      transport: 'beacon'
-                                    })
-                                  })
-                                }());
-                              </script>
+;(function(){
+function followTheLink(callback) {
+var called = false;
+function fn() {
+if (!called) {
+called = true;
+callback();
+}
+}
+setTimeout(fn, 2000);
+return fn;
+}
+
+document.querySelector('.insurance-table').addEventListener('click', function(event) {
+event.preventDefault();
+if (event.target.tagName != 'A') return;
+
+ga('send', 'event', {
+eventCategory: 'Dog insurance company Link',
+eventAction: 'Click',
+eventLabel: event.target.href,
+transport: 'beacon',
+hitCallback: followTheLink(function() {
+document.location.href = event.target.href;
+})
+})
+});
+
+}());
+</script>
                             </div>
                                 
                             <!-- end of pretty table -->    
