@@ -960,6 +960,21 @@ ul.faq li>div h3 {
 .sl-slide.item3 img {
     padding-top: 60px;
 }
+
+.subtitle_container{
+	padding: 30px !important;
+}
+.subtitle_img_a{
+	 float: left !important;
+	 width: 100px !important;
+	 align: top !important;
+}
+.subtitle{
+	text-align: left !important;
+	word-wrap: break-word !important;
+	word-break: break-all !important;
+}
+
 /* Media Queries */
 @media(max-width: 979px) {
     .nav-collapse {
@@ -1031,4 +1046,8 @@ ul.faq li>div h3 {
         width: 100%;
         margin-bottom: 20px;
     }
+	.subtitle_container{
+		padding: 0px !important;
+	}
 }
+
