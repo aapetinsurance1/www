@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/sl-slide.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/page_best-insurance-dog.css">
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <link rel="shortcut icon" href="images/title_logo.png">
 </head>
@@ -220,14 +221,16 @@
                                     <a href='dog/best_insurance_dog.html' class='btn subtitle_img_a'>
                                         <img src = 'images/roundcheck-3.gif' align = 'middle'>
                                     </a>
-                                    <p>Pet Insurance falls under property/casualty category and, like insurance industry in general, is highly regulated. Pet Insurance companies required to pay certain percentage of total premiums they collect in veterinary claims. Most Pet Insurance companies are Accredited by the Better Business Bureau and rated B to A+.. Check our <a href='dog/best_insurance_dog.html' class='btn-link'>2019 Pet Insurance companies rating</a> based on consumer and expert reviews.</p>
+                                    <p>Pet Insurance falls under property/casualty category and, like insurance industry in general, is highly regulated. Pet Insurance companies required to pay certain percentage of total premiums they collect in veterinary claims. Most Pet Insurance companies are Accredited by the Better Business Bureau and rated B to A+.. Check our <a href='dog/best_insurance_dog.html' class='btn-link'>2020 Pet Insurance companies rating</a> based on consumer and expert reviews.</p>
                                 </td>
                             </tr>
                         </table>
                     </div>
 
                     <div class="span6">
-                        <table width = '100%' cellpadding="5px">
+                    <div class="insurance-company">
+
+                        <table class="insurance-table" width = '100%' cellpadding="5px">
                             <tr align="top"> 
                                 <td colspan="2">
                                         <h2> Featured Pet Insurance Company:</h2>
@@ -243,6 +246,17 @@
                             </tr>
                         </table>
                     </div>
+                </div>
+
+                <script>
+                document.querySelector('.insurance-table').addEventListener('click', function(event) {
+                gtag('event', 'click', {
+                'event_category': 'Home page insurance company Link',
+                'event_label': event.target.href
+                });
+                });
+                </script>
+
                 </div>    
 
 
@@ -311,7 +325,7 @@
         <div class="container">
             <div class="row-fluid">
                 <div class="span10 cp">
-                    &copy; 2019 <a target="_blank" href="#"> All About Pet Insurance Solutions, LLC</a>. All Rights Reserved.
+                    &copy; 2019-2020 <a target="_blank" href="#"> All About Pet Insurance Solutions, LLC</a>. All Rights Reserved.
                 </div>
                 <div class="span2">
                     <a id="gototop" class="gototop pull-right" href="#"><i class="icon-angle-up"></i></a>
